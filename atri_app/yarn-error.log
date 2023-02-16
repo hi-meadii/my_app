@@ -1,0 +1,61 @@
+Arguments: 
+  C:\Users\hp\.atri\webapp-builder-win.exe.v0.0.78 C:\snapshot\webapp-builder\node_modules\yarn\bin\yarn.js install
+
+PATH: 
+  C:\Users\hp\.virtualenvs\my_app-l_4ZlsaW\Scripts;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\MinGW\bin;C:\Program Files\MongoDB\Server\5.0\bin;C:\Windows\System32;C:\Program Files (x86)\IVI Foundation\VISA\WinNT\Bin\;C:\Program Files\IVI Foundation\VISA\Win64\Bin\;C:\Program Files (x86)\National Instruments\Shared\LabVIEW CLI;C:\Program Files (x86)\IVI Foundation\VISA\WinNT\Bin;C:\Program Files\Java\jdk-18.0.1.1\bin;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\hp\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\hp\AppData\Local\Programs\Python\Python39\;C:\Users\hp\AppData\Local\Microsoft\WindowsApps;C:\Users\hp\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\hp\AppData\Local\hyper\app-3.0.2\resources\bin;C:\Program Files\heroku\bin;C:\Windows\System32;C:\Users\hp\AppData\Roaming\npm;C:\Users\hp\AppData\Local\GitHubDesktop\bin;C:\Users\hp\AppData\Local\Programs\Python\Python39\Scripts;C:\Users\hp\AppData\Local\Programs\Python;
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  16.16.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error [ERR_TLS_CERT_ALTNAME_INVALID]: Hostname/IP does not match certificate's altnames: Host: registry.yarnpkg.com. is not in the cert's altnames: DNS:securelogin.pu.ac.in
+      at new NodeError (node:internal/errors:372:5)
+      at Object.checkServerIdentity (node:tls:346:12)
+      at TLSSocket.onConnectSecure (node:_tls_wrap:1542:27)
+      at TLSSocket.emit (node:events:527:28)
+      at TLSSocket._finishInit (node:_tls_wrap:946:8)
+      at TLSWrap.ssl.onhandshakedone (node:_tls_wrap:727:12)
+
+npm manifest: 
+  {
+    "name": "atri-react-app-template",
+    "version": "0.0.0",
+    "private": "true",
+    "scripts": {
+      "buildApp": "atri-react-app-build-app",
+      "buildAppNode": "atri-react-app-build-server",
+      "buildServer": "cd server && tsc",
+      "build": "yarn run buildApp && yarn run buildAppNode",
+      "devServer": "node dist/server/index.js --dev",
+      "server": "node dist/server/index.js",
+      "dev": "atri-react-app-dev-server"
+    },
+    "dependencies": {
+      "@atrilabs/app-scripts": "^0.0.78",
+      "@atrilabs/core": "^0.0.78",
+      "chokidar": "^3.5.3",
+      "http-proxy-middleware": "^2.0.6",
+      "react": "18.0.0",
+      "react-dom": "18.0.0",
+      "react-router-dom": "^6.3.0",
+      "ws": "^8.8.0",
+      "zustand": "^4.0.0-rc.1",
+      "@atrilabs/react-component-manifests": "^0.0.78"
+    },
+    "devDependencies": {
+      "eslint-config-prettier": "^8.5.0",
+      "eslint-config-react-app": "^7.0.1"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
